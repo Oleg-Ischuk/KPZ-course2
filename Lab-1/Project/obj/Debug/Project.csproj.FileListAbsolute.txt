@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\SD_LAB\Lab-1\Project\bin\Debug\Project.exe.config
+C:\Users\User\Desktop\SD_LAB\Lab-1\Project\bin\Debug\Project.exe
+C:\Users\User\Desktop\SD_LAB\Lab-1\Project\bin\Debug\Project.pdb
+C:\Users\User\Desktop\SD_LAB\Lab-1\Project\bin\Debug\Library.dll
+C:\Users\User\Desktop\SD_LAB\Lab-1\Project\bin\Debug\Library.pdb
+C:\Users\User\Desktop\SD_LAB\Lab-1\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\SD_LAB\Lab-1\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SD_LAB\Lab-1\Project\obj\Debug\Project.csproj.Up2Date
+C:\Users\User\Desktop\SD_LAB\Lab-1\Project\obj\Debug\Project.exe
+C:\Users\User\Desktop\SD_LAB\Lab-1\Project\obj\Debug\Project.pdb
