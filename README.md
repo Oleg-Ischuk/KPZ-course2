@@ -1,47 +1,48 @@
-# Лабораторна робота 3
+# Лабораторна робота 1
 
-Принципи, дотримані в рамках лабораторної роботи:
+## Принципи, дотримані в рамках лабораторної роботи:
 
-- **KISS (Keep It Simple, Stupid)**  
-  Код написано просто, кожен клас виконує лише одну задачу. Наприклад, клас `Product` відповідає лише за товар, а `Warehouse` — за зберігання товарів. Також немає зайвих перевантажень або складних конструкцій.  
-  [Приклад: `Product` та `Warehouse`](https://github.com/oleg-ischuk/Library/blob/main/Library/Product.cs)  
-  Рядки коду: [12-26](https://github.com/oleg-ischuk/Library/blob/main/Library/Product.cs#L12-L26), [6-16](https://github.com/oleg-ischuk/Library/blob/main/Library/Warehouse.cs#L6-L16)
+### KISS (Keep It Simple, Stupid)
+Код написано просто та зрозуміло. Кожен клас виконує лише одну конкретну задачу:
+- Клас `Product` відповідає за збереження даних про товар.
+- Клас `Warehouse` займається управлінням запасами товарів.
+- Клас `Reporting` генерує звіти і реєструє надходження та відвантаження товарів.
+- Клас `Money` обробляє цінову інформацію про товари.
 
-- **YAGNI (You Aren't Going to Need It)**  
-  У коді реалізовано лише необхідний функціонал для роботи складу, обліку надходжень та відвантажень. Немає зайвих методів або класів, які не використовуються в поточному завданні.  
-  [Приклад: `RegisterIncome`, `RegisterOutcome`](https://github.com/oleg-ischuk/Library/blob/main/Library/Reporting.cs)  
-  Рядки коду: [14-23](https://github.com/oleg-ischuk/Library/blob/main/Library/Reporting.cs#L14-L23), [26-36](https://github.com/oleg-ischuk/Library/blob/main/Library/Reporting.cs#L26-L36)
+### YAGNI (You Aren't Going to Need It)
+У коді немає зайвого функціоналу або непотрібних функцій. Усі методи реалізовані тільки для вирішення задач, описаних у лабораторній роботі, без додавання непотрібних опцій чи складнощів.
 
-- **DRY (Don't Repeat Yourself)**  
-  Код не містить дублювання логіки. Всі операції з товарами обробляються через єдину загальну структуру даних (словник).  
-  [Приклад: методи `RegisterIncome` та `RegisterOutcome`](https://github.com/oleg-ischuk/Library/blob/main/Library/Reporting.cs)  
-  Рядки коду: [14-23](https://github.com/oleg-ischuk/Library/blob/main/Library/Reporting.cs#L14-L23), [26-36](https://github.com/oleg-ischuk/Library/blob/main/Library/Reporting.cs#L26-L36)
+### DRY (Don't Repeat Yourself)
+Вся логіка, яка повторюється в програмі, була винесена в окремі методи. Наприклад, додавання товару або зміна кількості товару зберігається лише в одному місці, що дозволяє зменшити дублювання коду.
 
-- **Fail Fast**  
-  У класі `Reporting` використовуються перевірки для виявлення можливих помилок на ранньому етапі, наприклад, перевірка на наявність товару перед його відвантаженням.  
-  [Приклад: `RegisterOutcome`](https://github.com/oleg-ischuk/Library/blob/main/Library/Reporting.cs)  
-  Рядки коду: [26-36](https://github.com/oleg-ischuk/Library/blob/main/Library/Reporting.cs#L26-L36)
+### Fail Fast
+У класі `Reporting` при реєстрації відвантаження товару перевіряється, чи є достатньо товару в складі, і виводиться повідомлення про помилку, якщо кількість товару менша за необхідну.
 
-- **Composition Over Inheritance**  
-  Клас `Reporting` використовує інстанс класу `Warehouse` через композицію, а не через наслідування. Це дозволяє більш гнучко керувати залежностями.  
-  [Приклад: композиція в `Reporting`](https://github.com/oleg-ischuk/Library/blob/main/Library/Reporting.cs)  
-  Рядки коду: [8-11](https://github.com/oleg-ischuk/Library/blob/main/Library/Reporting.cs#L8-L11)
+**Посилання на код:** [Reporting.cs](https://github.com/Oleg-Ischuk/KPZ-course2/blob/Lab-1/Lab-1/Library/Reporting.cs#L24-L46)
 
-- **SOLID (S - Single Responsibility Principle)**  
-  Кожен клас виконує лише одну задачу: `Product` відповідає за товари, `Money` за гроші, `Warehouse` за зберігання товарів, а `Reporting` за ведення обліку та звітність.  
-  [Приклад: `Product`, `Money`, `Warehouse`](https://github.com/oleg-ischuk/Library/blob/main/Library/Product.cs)  
-  Рядки коду: [6-26](https://github.com/oleg-ischuk/Library/blob/main/Library/Product.cs#L6-L26)  
-  [Приклад: `Money`](https://github.com/oleg-ischuk/Library/blob/main/Library/Money.cs)  
-  Рядки коду: [6-18](https://github.com/oleg-ischuk/Library/blob/main/Library/Money.cs#L6-L18)  
-  [Приклад: `Warehouse`](https://github.com/oleg-ischuk/Library/blob/main/Library/Warehouse.cs)  
-  Рядки коду: [6-16](https://github.com/oleg-ischuk/Library/blob/main/Library/Warehouse.cs#L6-L16)
+### Composition Over Inheritance
+У класі `Reporting` використовується композиція для роботи з класом `Warehouse`. Це дозволяє уникнути надмірної складності та дає більшу гнучкість при зміні логіки роботи складу.
 
-- **SOLID (O - Open/Closed Principle)**  
-  Класи можуть бути розширені, але існуючий функціонал не змінюється. Наприклад, можна додати нові методи в `Product` для спеціальних операцій, але клас не потребує переписування.  
-  [Приклад: розширення класу `Product`](https://github.com/oleg-ischuk/Library/blob/main/Library/Product.cs)  
-  Рядки коду: [6-26](https://github.com/oleg-ischuk/Library/blob/main/Library/Product.cs#L6-L26)
+**Посилання на код:** [Reporting.cs](https://github.com/Oleg-Ischuk/KPZ-course2/blob/Lab-1/Lab-1/Library/Reporting.cs#L11-L16)
 
-- **Program to Interfaces, not Implementations**  
-  У коді не використовується пряме програмування до реалізацій конкретних класів, що дозволяє легко змінювати реалізації без зміни зовнішнього інтерфейсу.  
-  [Приклад: програмування до інтерфейсів в `Product`](https://github.com/oleg-ischuk/Library/blob/main/Library/Product.cs)  
-  Рядки коду: [6-26](https://github.com/oleg-ischuk/Library/blob/main/Library/Product.cs#L6-L26)
+### SOLID (S - Single Responsibility Principle)
+Кожен клас у програмі відповідає лише за одну задачу:
+- Клас `Product` відповідає за інформацію про товар.
+- Клас `Warehouse` відповідає за управління запасами.
+- Клас `Reporting` відповідає за створення звітів і реєстрацію надходжень/відвантажень.
+- Клас `Money` відповідає за роботу з ціною товарів.
+
+**Посилання на код:** [Product.cs](https://github.com/Oleg-Ischuk/KPZ-course2/blob/Lab-1/Lab-1/Library/Product.cs)
+
+### SOLID (O - Open/Closed Principle)
+Програма розроблена таким чином, що існуючий код можна легко розширювати новими методами або класами без зміни існуючої логіки.
+
+### SOLID (L - Liskov Substitution Principle)
+У класах не використовується жодна ситуація, яка порушувала б принцип підстановки Лісков. Програма не містить класів, які є підкласами для інших, тому це не створює проблем у підстановці.
+
+### SOLID (I - Interface Segregation Principle)
+Програма не використовує інтерфейси без потреби, так як усі класи виконують свої функції без додаткових абстракцій.
+
+### SOLID (D - Dependency Inversion Principle)
+Програма не використовує абстракцію. 
+
