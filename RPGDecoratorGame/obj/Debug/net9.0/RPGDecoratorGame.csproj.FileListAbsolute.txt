@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\bin\Debug\net9.0\RPGDecoratorGame.exe
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\bin\Debug\net9.0\RPGDecoratorGame.deps.json
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\bin\Debug\net9.0\RPGDecoratorGame.runtimeconfig.json
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\bin\Debug\net9.0\RPGDecoratorGame.dll
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\bin\Debug\net9.0\RPGDecoratorGame.pdb
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\obj\Debug\net9.0\RPGDecoratorGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\obj\Debug\net9.0\RPGDecoratorGame.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\obj\Debug\net9.0\RPGDecoratorGame.AssemblyInfo.cs
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\obj\Debug\net9.0\RPGDecoratorGame.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\obj\Debug\net9.0\RPGDecoratorGame.sourcelink.json
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\obj\Debug\net9.0\RPGDecoratorGame.dll
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\obj\Debug\net9.0\refint\RPGDecoratorGame.dll
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\obj\Debug\net9.0\RPGDecoratorGame.pdb
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\obj\Debug\net9.0\RPGDecoratorGame.genruntimeconfig.cache
+C:\Users\User\Desktop\KPZ-course2\RPGDecoratorGame\obj\Debug\net9.0\ref\RPGDecoratorGame.dll

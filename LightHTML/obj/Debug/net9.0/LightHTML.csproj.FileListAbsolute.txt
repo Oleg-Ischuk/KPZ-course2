@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\KPZ-course2\LightHTML\bin\Debug\net9.0\LightHTML.exe
+C:\Users\User\Desktop\KPZ-course2\LightHTML\bin\Debug\net9.0\LightHTML.deps.json
+C:\Users\User\Desktop\KPZ-course2\LightHTML\bin\Debug\net9.0\LightHTML.runtimeconfig.json
+C:\Users\User\Desktop\KPZ-course2\LightHTML\bin\Debug\net9.0\LightHTML.dll
+C:\Users\User\Desktop\KPZ-course2\LightHTML\bin\Debug\net9.0\LightHTML.pdb
+C:\Users\User\Desktop\KPZ-course2\LightHTML\obj\Debug\net9.0\LightHTML.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\KPZ-course2\LightHTML\obj\Debug\net9.0\LightHTML.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\KPZ-course2\LightHTML\obj\Debug\net9.0\LightHTML.AssemblyInfo.cs
+C:\Users\User\Desktop\KPZ-course2\LightHTML\obj\Debug\net9.0\LightHTML.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\KPZ-course2\LightHTML\obj\Debug\net9.0\LightHTML.sourcelink.json
+C:\Users\User\Desktop\KPZ-course2\LightHTML\obj\Debug\net9.0\LightHTML.dll
+C:\Users\User\Desktop\KPZ-course2\LightHTML\obj\Debug\net9.0\refint\LightHTML.dll
+C:\Users\User\Desktop\KPZ-course2\LightHTML\obj\Debug\net9.0\LightHTML.pdb
+C:\Users\User\Desktop\KPZ-course2\LightHTML\obj\Debug\net9.0\LightHTML.genruntimeconfig.cache
+C:\Users\User\Desktop\KPZ-course2\LightHTML\obj\Debug\net9.0\ref\LightHTML.dll
