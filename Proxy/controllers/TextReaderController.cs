@@ -12,7 +12,7 @@ public class TextReaderController : ControllerBase
     public TextReaderController(
         ISmartTextReader reader,
         SmartTextChecker loggerProxy,
-        SmartTextReaderLocker accessProxy) // Now we can inject SmartTextReaderLocker
+        SmartTextReaderLocker accessProxy) 
     {
         _reader = reader;
         _loggerProxy = loggerProxy;
